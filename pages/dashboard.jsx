@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import DashboardComponent from 'DashboardComponent'
+import DashboardComponent from '../src/Components/Dashboard/Dashboardcomponent'
 import https from 'https';
 import { Doughnut, Bar } from 'react-chartjs-2';
 // Importe o Chart.js e suas escalas
