@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import DashboardComponent from '../src/Components/Dashboard/Dashboardcomponent'
+import DashboardComponent from '@components/Dashboard/Dashboardcomponent';
 import https from 'https';
 import { Doughnut, Bar } from 'react-chartjs-2';
 // Importe o Chart.js e suas escalas
 import Chart from 'chart.js/auto';
+
 import 'chart.js';
 import 'chartjs-adapter-date-fns';
 
