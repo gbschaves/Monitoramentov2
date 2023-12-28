@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import DashboardComponent from '@components/Dashboard/DashboardComponent.jsx';
 import https from 'https';
 import { Doughnut, Bar } from 'react-chartjs-2';
-// Importe o Chart.js e suas escalas
 import Chart from 'chart.js/auto';
 
 import 'chart.js';
@@ -139,8 +137,6 @@ const DashboardPage = () => {
 
         setEstabelecimentosData(processedDataTotalVenda);
         accumulateTotals();
-        
-        console.log('Objetos finais:', processedDataTotalVenda);
 
         // Código para atualizar as opções do dropdown...
         const dropdownOptions = processedDataTotalVenda.map(item => ({
@@ -158,26 +154,25 @@ const DashboardPage = () => {
 
   const handleDropdownSelect = (selectedOption) => {
     console.log('Opção selecionada:', selectedOption);
-  
+
     // Converta selectedOption para número
     const selectedEstab = estabelecimentosData.find(estab => estab.codestabelec === Number(selectedOption));
     console.log('Estabelecimento selecionado:', selectedEstab);
-  
+
     if (!selectedEstab) {
       console.error(`Estabelecimento não encontrado para a opção selecionada: ${selectedOption}`);
     }
-  
+
     setSelectedEstablishment(selectedEstab);
   };
-  
-  
+
   useEffect(() => {
     console.log('Dados do estabelecimento:', estabelecimentosData);
   }, [estabelecimentosData]);
 
   return (
-    <DashboardComponent>
-      <div style={{margin: '20px'}} className="dropdown">
+    <div>
+      <div style={{ margin: '20px' }} className="dropdown">
         <select onChange={(e) => handleDropdownSelect(e.target.value)}>
           <option value="" disabled hidden>Selecione uma opção</option>
           {dropdownOptions.map(option => (
@@ -187,13 +182,13 @@ const DashboardPage = () => {
       </div>
 
       {selectedEstablishment && (
-        <div style={{ display: 'flex', flexDirection: 'row' , margin: '20px'}}>
-          <div style={{ flex: 1, marginTop: '25px'}}>
-            <h2 style={{width: '10%'}}>{selectedEstablishment.nomeEstabelecimento}</h2>
-              <p>Total Venda Diária: {selectedEstablishment.totalVendaDiaria.toFixed(2)}</p>
-              <p>Média: {(selectedEstablishment.media / 8).toFixed(2)}</p>
+        <div style={{ display: 'flex', flexDirection: 'row', margin: '20px' }}>
+          <div style={{ flex: 1, marginTop: '25px' }}>
+            <h2 style={{ width: '10%' }}>{selectedEstablishment.nomeEstabelecimento}</h2>
+            <p>Total Venda Diária: {selectedEstablishment.totalVendaDiaria.toFixed(2)}</p>
+            <p>Média: {(selectedEstablishment.media / 8).toFixed(2)}</p>
           </div>
-          <div style={{ flex: 1, marginTop: '50px'}}>
+          <div style={{ flex: 1, marginTop: '50px' }}>
             {/* Gráfico Redondo (Velocímetro) */}
             <Doughnut
               data={{
@@ -208,7 +203,7 @@ const DashboardPage = () => {
             />
           </div>
 
-          <div style={{ flex: 1, marginTop: '50px'}}>
+          <div style={{ flex: 1, marginTop: '50px' }}>
             {/* Gráfico de Barras */}
             <Bar
               data={{
@@ -231,7 +226,7 @@ const DashboardPage = () => {
           </div>
         </div>
       )}
-    </DashboardComponent>
+    </div>
   );
 };
 
