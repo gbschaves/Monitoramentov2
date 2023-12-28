@@ -1,0 +1,46 @@
+{
+  "name": "dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
+    "@sanity/image-url": "^1.0.2",
+    "@syncfusion/ej2-react-charts": "^20.4.42",
+    "@syncfusion/ej2-react-circulargauge": "^20.4.42",
+    "@syncfusion/ej2-react-dropdowns": "^20.4.42",
+    "@syncfusion/ej2-react-grids": "^20.4.43",
+    "@syncfusion/ej2-react-heatmap": "^20.4.42",
+    "chart.js": "^4.4.1",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "cors": "^2.8.5",
+    "cors-anywhere": "^0.4.4",
+    "eslint": "8.30.0",
+    "eslint-config-next": "13.1.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "helmet-csp": "^3.4.0",
+    "http-proxy-middleware": "^2.0.6",
+    "next": "^13.5.4",
+    "next-sanity": "^3.1.8",
+    "node-fetch": "^3.3.2",
+    "node-sass": "^9.0.0",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.16.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.3",
+    "tailwindcss": "^3.3.3"
+  }
+}

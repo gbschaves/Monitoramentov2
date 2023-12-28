@@ -1,0 +1,35 @@
+.spotListItem {
+  list-style-type: none;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin: 5px;
+  width: 200px;
+  height: 100%; // Ocupa 100% da altura do pai
+  display: inline-block;
+  vertical-align: top;
+  background-color: #f9f9f9;
+  text-align: left;
+  font-size: 12px; /* Diminui o tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  margin-right: px;
+  padding-left: 5px;
+}
+
+.spotListItem p {
+  margin: 3px 0;
+  color: black;
+  font-size: 10px; /* Diminui o tamanho da fonte ainda mais */
+  font-weight: bold; /* Texto em negrito */
+}
+
+.percentCircle {
+  border-radius: 50%;
+  width: 50px; /* Aumenta o tamanho do círculo */
+  height: 50px; /* Aumenta o tamanho do círculo */
+  line-height: 50px; /* Ajusta a linha de altura para centralizar verticalmente */
+  text-align: center;
+  color: black; /* Alterado para preto */
+  font-weight: bold; /* Texto em negrito */
+  font-size: 12px; /* Diminui o tamanho da fonte ainda mais */
+  margin: 4px auto; /* Centraliza horizontalmente */
+}

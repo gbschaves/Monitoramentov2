@@ -1,0 +1,20 @@
+/* components/Dashboard/Dashboard.module.scss */
+.dashboardContainer {
+  padding-left: 6px;
+}
+
+.navbar {
+  background-color: #333333;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Aplicar estilo diretamente a uma classe local */
+.dashboardTitle {
+  color: #fff;
+}
+
+/* Adicione estilos conforme necessário para o restante do conteúdo */
+.spotsContainer { 
+  margin-left: 20px
+}

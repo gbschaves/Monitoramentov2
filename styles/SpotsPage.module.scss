@@ -1,0 +1,67 @@
+// Seu arquivo SCSS
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .toggleButton {
+    margin-left: 20px; // Espaçamento entre os valores e o botão
+    padding: 8px 12px; // Reduz o preenchimento do botão
+    background-color: #3fa8ff; // Define a cor de fundo
+    color: #000; // Muda a cor do texto para preto
+    font-size: 14px; // Aumenta um pouco o tamanho da fonte
+    font-weight: bold;
+    border: none; // Remove a borda
+    border-radius: 5px; // Adiciona borda arredondada
+    cursor: pointer;
+    transition: background-color 0.3s ease; // Adiciona transição suave na cor de fundo
+
+    &:hover {
+      background-color: #2a7aa9; // Cor alterada ao passar o mouse
+    }
+  }
+
+  .titleAndTime {
+    display: flex;
+    align-items: baseline; // Mantém os itens na mesma linha de base
+
+    h1 {
+      margin-right: 20px; // Espaçamento entre o h1 e o currentTime
+      margin-left: 20px;
+      // Estilos para o cabeçalho h1
+      // ...
+    }
+
+    .currentTime {
+      // Estilos para o relógio
+      // ...
+    }
+  }
+
+  .infoContainer {
+    display: flex;
+    align-items: center;
+
+    .totalInfo {
+      display: flex;
+      flex-direction: column; // Mantenha os valores abaixo do h1
+      align-items: flex-end; // Ajustado para alinhar à direita
+
+      .totalItem {
+        margin-top: 10px; // Ajuste a margem conforme necessário
+        // Estilos para os itens de informação total
+        // ...
+
+        strong {
+          font-weight: bold; // Deixa o texto em negrito
+        }
+      }
+    }
+
+    .toggleButton {
+      margin-left: 20px; // Espaçamento entre os valores e o botão
+      // Estilos para o botão de alternância
+      // ...
+    }
+  }
+}

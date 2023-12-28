@@ -1,0 +1,5 @@
+# meuscript.sh
+# starta o proxt
+node proxy.js
+# starta o next
+npm run dev
